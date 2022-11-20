@@ -1,17 +1,28 @@
 export default function Home() {
     return (
-        <div className="bg-gray-900 flex items-center justify-center h-screen">
-            <div className="flex-col items-center justify-center">
-                <h1 className="font-sans font-black text-8xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-600">
-                    Get. Set. Code!
+      <div>
+        <div className="bg-zinc-900 flex items-center justify-center h-screen">
+        
+          <div className="text-white absolute top-10 left-10 text-2xl">
+            <p>
+              <span className="text-orange-400">&gt;/</span> loop.
+            </p>
+          </div>
+        
+          <div className="grid grid-cols-6 container">
+            <div className="col-span-3 flex flex-col space-y-10 ">
+                <h1 className="w-full font-sans tracking-normal font-black text-8xl text-white ">
+                get.set.code<span className="text-orange-400">.</span>
                 </h1>
-                {/*<div className="px-5 py-2 bg-purple-600 rounded-lg text-white ">*/}
-                {/*    <p>Joi'n us at Loop</p>*/}
-                {/*</div>*/}
-                <p className="text-center font-sans mt-5 font-semibold text-white text-2xl">
-                    Join us now @ LOOP club!
-                </p>
+                <h4 className="font-sans tracking-normal font-regular text-xl text-white ml-2 ">
+                    begin your journey to code with Loop.
+                </h4>
+                <button className="float-left w-fit px-10 py-4 border-4 border-orange-400 text-white">
+                    Join Now
+                </button>
             </div>
+          </div>
         </div>
-    )
+      </div>
+    );
 }
